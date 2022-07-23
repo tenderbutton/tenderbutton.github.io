@@ -1,20 +1,43 @@
 <html>
 <head>
 	<style type="text/css">
-img {
-            position: absolute;
-            /*img左上角移动到html的中心*/
-            top: 50%;
-            left: 50%;
-            /*img左上角向左上角分别移动自身的一半距离*/
-            transform: translate(-50%, -50%);
-            /*text-align: center;*/
-        }
+
+
+      	/*分辨率低于1280，采用下面的样式*/
+   		 @media screen and (max-device-width:1280px){
+        	img {
+        		 content:url(img/index_mobile.png);
+	            position: absolute;
+	            /*img左上角移动到html的中心*/
+	            top: 50%;
+	            left: 50%;
+	            /*img左上角向左上角分别移动自身的一半距离*/
+	            transform: translate(-50%, -50%);
+	            /*text-align: center;*/
+       		 }
+
+		}
+
+		/*分辨率高于1440，采用下面的样式*/
+    @media screen and (min-device-width: 1440px){
+        	img {
+        		content:url(img/index_window.png); 
+	            position: absolute;
+	            /*img左上角移动到html的中心*/
+	            top: 50%;
+	            left: 50%;
+	            /*img左上角向左上角分别移动自身的一半距离*/
+	            transform: translate(-50%, -50%);
+	            /*text-align: center;*/
+       		 }
+
+		}
+
 	</style>
 </head>
 <body>
 	<div class="main">
-		<img style="max-height:80%;overflow:hidden;" src="img/index_window.png" />
+		<img style="max-height:80%;overflow:hidden;"/>
 	</div>
 </body>
 </html>
