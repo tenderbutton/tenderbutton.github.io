@@ -1,29 +1,20 @@
 <html>
 <head>
 	<style type="text/css">
-		 .main{
-			text-align: center;
-			background-color: #fff;
-			border-radius: 20px;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
-		}
+img {
+            position: absolute;
+            /*img左上角移动到html的中心*/
+            top: 50%;
+            left: 50%;
+            /*img左上角向左上角分别移动自身的一半距离*/
+            transform: translate(-50%, -50%);
+            /*text-align: center;*/
+        }
 	</style>
 </head>
 <body>
 	<div class="main">
-		<img src="" />
-
-		<img
-		 style="height:80%;overflow:hidden;"
-
-		 srcset="img/index_mobile.png 320w,
-             img/index_mobile.png 480w,
-             img/index_window.png 800w"
-     src="mg/index_mobile.png"/>
-
+		<img style="max-height:80%;overflow:hidden;" src="img/index_window.png" />
 	</div>
 </body>
 </html>
